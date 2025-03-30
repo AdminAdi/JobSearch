@@ -21,10 +21,10 @@ app.use(cookieParser());
 
 //cors
 const corsOptions = {
-    origin: " http://localhost:5173",
+    origin: ["http://localhost:5173", "https://jobsearchadi.netlify.app"],
     credentials: true
-
 };
+
 app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
