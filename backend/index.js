@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 //cors
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://jobsearchadi.netlify.app"],
+    origin: ["http://localhost:5173", "https://job-search-hmn1.vercel.app/"],
     credentials: true
 };
 
@@ -36,10 +36,10 @@ app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.send({
-        activeStatus:true,
-        error:false,
+        activeStatus: true,
+        error: false,
     })
 })
 
